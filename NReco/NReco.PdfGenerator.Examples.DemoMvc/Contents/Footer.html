@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        html {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        function toPersianNum(num, dontTrim) {
+            var i = 0;
+            dontTrim = dontTrim || false;
+
+            num = dontTrim ? num.toString() : num.toString().trim();
+            var len = num.length;
+            var res = '';
+            var pos;
+
+            var persianNumbers = typeof persianNumber == 'undefined' ?
+                ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'] :
+                persianNumbers;
+
+            for (; i < len; i++)
+                if ((pos = persianNumbers[num.charAt(i)]))
+                    res += pos;
+                else
+                    res += num.charAt(i);
+
+            return res;
+        }
+        function subst() {
+            function getParameterByName(name) {
+                var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+                return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+            }
+
+            function substitute(name) {
+                var value = getParameterByName(name);
+                var elements = document.getElementsByClassName(name);
+
+                for (var i = 0; elements && i < elements.length; i++) {
+                    elements[i].textContent = toPersianNum(value);
+                }
+            }
+
+            ['frompage', 'topage', 'page', 'webpage', 'section', 'subsection', 'subsubsection']
+                .forEach(function (param) {
+                    substitute(param);
+                });
+        }
+
+
+
+    </script>
+</head>
+<body style="border: 0; margin: 0;padding: 0" onload="subst()">
+    <div style='text-align: center; font-size: 20px; font-family: B Nazanin;'><span class='page'></span></div>
+    <div style='text-align: center;'><img src='http://localhost:49920/Temp/Images/test2.png'></div>
+</body>
+</html>

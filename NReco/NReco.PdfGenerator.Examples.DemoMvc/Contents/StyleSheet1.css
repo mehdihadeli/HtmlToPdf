@@ -1,0 +1,16 @@
+﻿
+
+@font-face {
+    font-family: 'SGKara-Light';
+    src: url('../Fonts/SGKara-Light.eot?#')format('eot'), url('../Fonts/SGKara-Light.woff') format('woff'), url('../Fonts/SGKara-Light.ttf') format('truetype');
+}
+
+* {
+    color: blue;
+        font-family: "SGKara-Light";
+}
+
+p {
+    color: red;
+    font-family: "SGKara-Light";
+}
