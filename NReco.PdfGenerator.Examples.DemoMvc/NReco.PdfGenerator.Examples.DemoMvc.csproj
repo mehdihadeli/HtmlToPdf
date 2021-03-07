@@ -91,12 +91,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contents\Footer.html" />
+    <EmbeddedResource Include="Contents\Footer.html" />
+    <EmbeddedResource Include="Contents\footer.png" />
     <Content Include="Contents\google.png" />
-    <Content Include="Contents\Header.html" />
+    <EmbeddedResource Include="Contents\Header.html" />
+    <EmbeddedResource Include="Contents\header.png" />
     <Content Include="Contents\HTMLPage1.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Contents\Print.css" />
     <Content Include="Contents\StyleSheet1.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -131,21 +134,21 @@
     <Content Include="Download.ashx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contents\Fonts\BNasimBold.woff" />
-    <Content Include="Contents\Fonts\BNazanin.eot" />
-    <Content Include="Contents\Fonts\BNazanin.ttf" />
-    <Content Include="Contents\Fonts\SGKara-Bold.eot" />
-    <Content Include="Contents\Fonts\SGKara-Bold.ttf" />
-    <Content Include="Contents\Fonts\SGKara-Bold.woff" />
-    <Content Include="Contents\Fonts\SGKara-Light.eot" />
-    <Content Include="Contents\Fonts\SGKara-Light.ttf" />
-    <Content Include="Contents\Fonts\SGKara-Light.woff" />
-    <Content Include="Contents\Fonts\SGKara-Regular.eot" />
-    <Content Include="Contents\Fonts\SGKara-Regular.ttf" />
-    <Content Include="Contents\Fonts\SGKara-Regular.woff" />
-    <Content Include="Contents\Fonts\SGKara-SemiBold.eot" />
-    <Content Include="Contents\Fonts\SGKara-SemiBold.ttf" />
-    <Content Include="Contents\Fonts\SGKara-SemiBold.woff" />
+    <EmbeddedResource Include="Contents\Fonts\BNasimBold.woff" />
+    <EmbeddedResource Include="Contents\Fonts\BNazanin.eot" />
+    <EmbeddedResource Include="Contents\Fonts\BNazanin.ttf" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Bold.eot" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Bold.ttf" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Bold.woff" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Light.eot" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Light.ttf" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Light.woff" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Regular.eot" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Regular.ttf" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-Regular.woff" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-SemiBold.eot" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-SemiBold.ttf" />
+    <EmbeddedResource Include="Contents\Fonts\SGKara-SemiBold.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

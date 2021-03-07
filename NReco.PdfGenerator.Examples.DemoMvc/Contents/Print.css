@@ -1,0 +1,83 @@
+﻿@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@font-face {
+    font-family: "SGKara-Regular";
+    src: url('../Fonts/SGKara-Regular.eot?#')format('eot'), url('../Fonts/SGKara-Regular.woff') format('woff'), url('../Fonts/SGKara-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SGKara-Light";
+    src: url('../Fonts/SGKara-Light.eot?#')format('eot'), url('../Fonts/SGKara-Light.woff') format('woff'), url('../Fonts/SGKara-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "B Nazanin";
+    src: url('../Fonts/BNazanin.eot?#')format('eot'), url('../Fonts/BNazanin.woff') format('woff'),url('../Fonts/BNazanin.ttf') format('truetype');
+}
+
+* {
+    -webkit-print-color-adjust: exact;
+}
+
+u {
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
+}
+
+
+body {
+    padding-top: 20px;
+    direction: rtl;
+    font-family: "B Nazanin","SGKara-Light",tahoma;
+    font-size: 20px;
+}
+
+table {
+    float: none;
+    text-align: center;
+    max-width: 600px;
+    font-size: 20px;
+}
+
+div.divHeader {
+    text-align: left;
+    direction: ltr;
+    font-size: 8px;
+    font-family: "B Nazanin","SGKara-Light",tahoma;
+}
+
+.tableHeaderColumn {
+    background-color: #d9d9d9;
+    font-size: 20px;
+    border-collapse: collapse;
+    border: solid black 1.0pt;
+}
+.AlignLeft {
+    text-align: left
+}
+
+.AlignRight {
+    text-align: right;
+}
+
+.AlignCenter {
+    text-align: center;
+}
+
+.AlignJustify {
+    text-align: justify;
+    text-rendering: geometricPrecision !important;
+    word-spacing: -2px;
+    /*width: 21cm;*/
+    text-align: justify;
+}
+
+@page {
+    /* this affects the margin in the printer settings */
+    margin: 32mm 24mm 12mm 24mm;
+    size: A4;
+}
